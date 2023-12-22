@@ -1,18 +1,26 @@
 import React from "react";
-import { Link, Outlet } from "react-router-dom";
+import { Link } from "react-router-dom";
+import "./Services.css"; // Import the CSS file for styling
 
 const Services = () => {
   return (
-    <div>
-      <h1>Our Services</h1>
-      <p>
+    <div className="services-container">
+      <h1 className="section-heading">Our Services</h1>
+      <p className="services-description">
         Details about the services we offer, such as architectural planning,
         design, and construction...
       </p>
-      <Link to="/architecture-design">Architecture Design</Link>
-      <Link to="/architectural-planning">Architectural Planning</Link>
-      <Link to="/contact">Contact</Link>
-      <Outlet />
+      <div className="services-links">
+        <Link to="/architecture-design" className="service-link">
+          Architecture Design
+        </Link>
+        <Link to="/architectural-planning" className="service-link">
+          Architectural Planning
+        </Link>
+        <Link to="/contact" className="service-link">
+          Contact
+        </Link>
+      </div>
     </div>
   );
 };

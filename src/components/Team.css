@@ -1,0 +1,45 @@
+/* Team.css */
+
+.team-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  color: #fff;
+}
+
+.section-heading {
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.team-members {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.team-member {
+  background-color: #000;
+  padding: 20px;
+  border-radius: 8px;
+  flex: 1 1 calc(33.333% - 20px);
+  max-width: calc(33.333% - 20px);
+  box-sizing: border-box;
+}
+
+.member-name {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.member-position {
+  font-size: 1.2rem;
+  font-weight: 300;
+  margin-bottom: 15px;
+}
+
+.member-bio {
+  font-size: 1rem;
+  line-height: 1.4;
+}

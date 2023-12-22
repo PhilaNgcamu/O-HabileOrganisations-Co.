@@ -1,0 +1,60 @@
+/* Home.css */
+
+.home-container {
+  max-width: 800px;
+  margin: 100px auto;
+  padding: 20px;
+  text-align: center;
+  color: #fff;
+}
+
+.main-heading {
+  font-size: 3.5rem;
+  margin-bottom: 20px;
+}
+
+.sub-heading {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+}
+
+.home-links {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.home-link {
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.services {
+  background-color: #000;
+  color: #fff;
+}
+
+.services:hover {
+  background-color: #333;
+}
+
+.team {
+  background-color: #444;
+  color: #fff;
+}
+
+.team:hover {
+  background-color: #666;
+}
+
+.contact {
+  background-color: #888;
+  color: #000;
+}
+
+.contact:hover {
+  background-color: #aaa;
+}

@@ -1,4 +1,5 @@
 import React from "react";
+import "./Team.css"; // Import the CSS file for styling
 
 const Team = () => {
   const teamMembers = [
@@ -16,14 +17,14 @@ const Team = () => {
   ];
 
   return (
-    <div>
-      <h1>Our Team</h1>
-      <div>
+    <div className="team-container">
+      <h1 className="section-heading">Our Team</h1>
+      <div className="team-members">
         {teamMembers.map((member, index) => (
-          <div key={index}>
-            <h2>{member.name}</h2>
-            <h3>{member.position}</h3>
-            <p>{member.bio}</p>
+          <div key={index} className="team-member">
+            <h2 className="member-name">{member.name}</h2>
+            <h3 className="member-position">{member.position}</h3>
+            <p className="member-bio">{member.bio}</p>
           </div>
         ))}
       </div>
