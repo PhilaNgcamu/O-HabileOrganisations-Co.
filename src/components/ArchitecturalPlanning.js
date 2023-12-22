@@ -1,13 +1,22 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import "./ArchitecturalPlanning.css"; // Import the CSS file for styling
 
 const ArchitecturalPlanning = () => {
   return (
-    <div>
-      <h1>Architectural Planning</h1>
-      <p>Comprehensive overview of our architectural planning methodology...</p>
-      <Link to="/services">Back to Services</Link>
-      <Link to="/contact">Contact</Link>
+    <div className="architectural-planning-container">
+      <h1 className="section-heading">Architectural Planning</h1>
+      <p className="section-description">
+        Comprehensive overview of our architectural planning methodology...
+      </p>
+      <div className="navigation-links">
+        <Link to="/services" className="back-link">
+          Back to Services
+        </Link>
+        <Link to="/contact" className="contact-link">
+          Contact
+        </Link>
+      </div>
     </div>
   );
 };
