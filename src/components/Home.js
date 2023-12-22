@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import Logo from "./O-HabileOrgabizations&Co.jpg";
+import video from "./video.mp4";
 import "./Home.css";
 
 const Home = () => {
@@ -25,7 +26,14 @@ const Home = () => {
 
       <div className="main-content">
         <video autoPlay loop muted className="video-background">
-          <source src="path_to_your_video_file.mp4" type="video/mp4" />
+          <source
+            src={video}
+            autoPlay
+            loop
+            muted
+            className="video-element"
+            type="video/mp4"
+          />
           Your browser does not support the video tag.
         </video>
         <h1 className="main-heading">O-Habile Organisations & Co.</h1>
