@@ -1,25 +1,39 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import "./Home.css"; // Import the CSS file for styling
+import Logo from "./O-HabileOrgabizations&Co.jpg";
+import "./Home.css";
 
 const Home = () => {
   return (
     <div className="home-container">
-      <h1 className="main-heading">Welcome to O-Habile Organisations & Co</h1>
-      <p className="sub-heading">
-        Empowering tomorrow's landscapes through visionary design, sustainable
-        architecture, and meticulous planning...
-      </p>
-      <div className="home-links">
-        <Link to="/services" className="home-link services">
-          Services
-        </Link>
-        <Link to="/team" className="home-link team">
-          Team
-        </Link>
-        <Link to="/contact" className="home-link contact">
-          Contact
-        </Link>
+      <div className="navbar">
+        <div className="logo">
+          <img src={Logo} alt="Company Logo" className="logo-image" />
+        </div>
+        <div className="nav-links">
+          <Link to="/services" className="nav-link">
+            Services
+          </Link>
+          <Link to="/team" className="nav-link">
+            Team
+          </Link>
+          <Link to="/contact" className="nav-link">
+            Contact
+          </Link>
+        </div>
+      </div>
+
+      <div className="main-content">
+        <video autoPlay loop muted className="video-background">
+          <source src="path_to_your_video_file.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+        <h1 className="main-heading">O-Habile Organisations & Co.</h1>
+        <p className="sub-heading">
+          Empowering tomorrow's landscapes through visionary design, sustainable
+          architecture, and meticulous planning...
+        </p>
+        {/* Rest of your content */}
       </div>
     </div>
   );
