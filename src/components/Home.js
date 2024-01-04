@@ -41,8 +41,20 @@ const Home = () => {
           Empowering tomorrow's landscapes through visionary design, sustainable
           architecture, and meticulous planning...
         </p>
-        {/* Rest of your content */}
       </div>
+      <section className="services-section">
+        <h2>Our Services</h2>
+        <p>Outline or brief overview of services...</p>
+      </section>
+
+      <section className="team-section">
+        <h2>Our Team</h2>
+        <p>Introduction to the team...</p>
+      </section>
+      <section className="additional-content">
+        <h2>Contact</h2>
+        <p>More information or content...</p>
+      </section>
     </div>
   );
 };
