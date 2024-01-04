@@ -5,6 +5,21 @@ import video from "./video.mp4";
 import "./Home.css";
 
 const Home = () => {
+  const videoRef = useRef(null);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollOffset = window.pageYOffset;
+      if (videoRef.current) {
+        videoRef.current.style.transform = `translateY(-${
+          scrollOffset * 0.5
+        }px)`;
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
   return (
     <div className="home-container">
       <div className="navbar">
@@ -24,7 +39,7 @@ const Home = () => {
         </div>
       </div>
       <div className="main-content">
-        <video autoPlay loop muted className="video-background">
+        <video autoPlay loop muted className="video-background" ref={videoRef}>
           <source
             src={video}
             autoPlay
@@ -45,7 +60,6 @@ const Home = () => {
         <h2>Our Services</h2>
         <p>Outline or brief overview of services...</p>
       </section>
-
       <section className="team-section">
         <h2>Our Team</h2>
         <p>Introduction to the team...</p>
