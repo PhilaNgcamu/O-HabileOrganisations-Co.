@@ -3,6 +3,12 @@ import { Link } from "react-router-dom";
 import Logo from "./O-HabileOrgabizations&Co.jpg";
 import video from "./video.mp4";
 import "./Home.css";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faFacebookF,
+  faTwitter,
+  faInstagram,
+} from "@fortawesome/free-brands-svg-icons";
 
 const Home = () => {
   const videoRef = useRef(null);
@@ -36,6 +42,17 @@ const Home = () => {
           <Link to="/contact" className="nav-link">
             Contact
           </Link>
+        </div>
+        <div className="social-links">
+          <a href="#" className="social-link">
+            <FontAwesomeIcon icon={faFacebookF} />
+          </a>
+          <a href="#" className="social-link">
+            <FontAwesomeIcon icon={faTwitter} />
+          </a>
+          <a href="#" className="social-link">
+            <FontAwesomeIcon icon={faInstagram} />
+          </a>
         </div>
       </div>
       <div className="main-content">
