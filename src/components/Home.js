@@ -23,7 +23,6 @@ const Home = () => {
           </Link>
         </div>
       </div>
-
       <div className="main-content">
         <video autoPlay loop muted className="video-background">
           <source
