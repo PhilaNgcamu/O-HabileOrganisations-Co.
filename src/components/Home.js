@@ -1,5 +1,6 @@
 import React, { useEffect, useRef } from "react";
-import { Link } from "react-router-dom";
+import { Card, Button } from "react-bootstrap";
+import { Link, NavLink } from "react-router-dom";
 import Logo from "./O-HabileOrgabizations&Co.jpg";
 import video from "./video.mp4";
 import "./Home.css";
@@ -26,6 +27,30 @@ const Home = () => {
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
+
+  const services = [
+    {
+      title: "Architectural Planning",
+      description:
+        "Designing visionary architecture for tomorrow's landscapes.",
+      link: "/architectural-planning",
+      image: "URL_TO_YOUR_IMAGE_1",
+    },
+    {
+      title: "Architecture Design",
+      description:
+        "Creating eco-friendly and sustainable architectural designs.",
+      link: "/architecture-design",
+      image: "URL_TO_YOUR_IMAGE_2",
+    },
+    {
+      title: "Construction",
+      description: "Expert construction services for architectural projects.",
+      link: "/construction",
+      image: "URL_TO_YOUR_IMAGE_3",
+    },
+  ];
+
   return (
     <div className="home-container">
       <div className="navbar">
@@ -75,7 +100,32 @@ const Home = () => {
       </div>
       <section className="services-section">
         <h2>Our Services</h2>
-        <p>Outline or brief overview of services...</p>
+        <div className="card-container">
+          {services.map((service, index) => (
+            <div key={index} className="custom-card">
+              <Card>
+                <Card.Img
+                  variant="top"
+                  src={service.image}
+                  alt={service.title}
+                />
+                <Card.Body>
+                  <Card.Title>{service.title}</Card.Title>
+                  <Card.Text>{service.description}</Card.Text>
+                  <Button variant="primary" className="custom-button">
+                    <NavLink
+                      to={service.link}
+                      className="btn-link"
+                      style={{ color: "white", textDecoration: "none" }}
+                    >
+                      Learn More
+                    </NavLink>
+                  </Button>
+                </Card.Body>
+              </Card>
+            </div>
+          ))}
+        </div>
       </section>
       <section className="team-section">
         <h2>Our Team</h2>
