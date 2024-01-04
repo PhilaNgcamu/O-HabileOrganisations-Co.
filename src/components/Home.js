@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useRef } from "react";
 import { Link } from "react-router-dom";
 import Logo from "./O-HabileOrgabizations&Co.jpg";
 import video from "./video.mp4";
