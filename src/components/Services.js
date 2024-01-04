@@ -17,6 +17,9 @@ const Services = () => {
         <Link to="/architectural-planning" className="service-link">
           Architectural Planning
         </Link>
+        <Link to="/construction" className="service-link">
+          Construction
+        </Link>
         <Link to="/contact" className="service-link">
           Contact
         </Link>
