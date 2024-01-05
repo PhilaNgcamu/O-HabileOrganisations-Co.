@@ -21,11 +21,6 @@
   margin-bottom: 30px;
 }
 
-.navigation-links {
-  display: flex;
-  justify-content: space-between;
-}
-
 .back-link,
 .contact-link {
   padding: 10px 20px;
@@ -33,6 +28,7 @@
   text-decoration: none;
   font-weight: bold;
   transition: background-color 0.3s ease, color 0.3s ease;
+  margin: 0 10px; /* Add margin between the links */
 }
 
 .back-link {
@@ -47,6 +43,9 @@
 .contact-link {
   background-color: #000;
   color: #fff;
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
 }
 
 .contact-link:hover {

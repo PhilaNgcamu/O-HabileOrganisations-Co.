@@ -21,13 +21,7 @@
   margin-bottom: 30px;
 }
 
-.navigation-links {
-  display: flex;
-  justify-content: space-between;
-}
-
-.back-link,
-.contact-link {
+.back-link {
   padding: 10px 20px;
   border-radius: 5px;
   text-decoration: none;
@@ -42,13 +36,4 @@
 
 .back-link:hover {
   background-color: #ccc;
-}
-
-.contact-link {
-  background-color: #000;
-  color: #fff;
-}
-
-.contact-link:hover {
-  background-color: #333;
 }
