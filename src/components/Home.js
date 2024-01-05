@@ -2,6 +2,10 @@ import React, { useEffect, useRef } from "react";
 import { Card, Button } from "react-bootstrap";
 import { Link, NavLink } from "react-router-dom";
 import Logo from "./O-HabileOrgabizations&Co.jpg";
+import PlanningArch from "./planning_arch.jpg";
+import Arch_Design from "./arch_design.jpg";
+import ConstructionPic from "./construction_pic.jpg";
+
 import video from "./video.mp4";
 import "./Home.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -34,20 +38,20 @@ const Home = () => {
       description:
         "Designing visionary architecture for tomorrow's landscapes.",
       link: "/architectural-planning",
-      image: "URL_TO_YOUR_IMAGE_1",
+      image: PlanningArch,
     },
     {
       title: "Architecture Design",
       description:
         "Creating eco-friendly and sustainable architectural designs.",
       link: "/architecture-design",
-      image: "URL_TO_YOUR_IMAGE_2",
+      image: Arch_Design,
     },
     {
       title: "Construction",
       description: "Expert construction services for architectural projects.",
       link: "/construction",
-      image: "URL_TO_YOUR_IMAGE_3",
+      image: ConstructionPic,
     },
   ];
 
@@ -108,6 +112,7 @@ const Home = () => {
                   variant="top"
                   src={service.image}
                   alt={service.title}
+                  style={{ height: "200px", objectFit: "cover" }}
                 />
                 <Card.Body>
                   <Card.Title>{service.title}</Card.Title>
