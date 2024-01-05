@@ -161,7 +161,23 @@ const Home = () => {
       </section>
       <section className="additional-content">
         <h2>Contact</h2>
-        <p>More information or content...</p>
+        <form className="contact-form">
+          <div className="form-group">
+            <label htmlFor="name">Name:</label>
+            <input type="text" id="name" placeholder="Your Name" />
+          </div>
+          <div className="form-group">
+            <label htmlFor="email">Email:</label>
+            <input type="email" id="email" placeholder="Your Email" />
+          </div>
+          <div className="form-group">
+            <label htmlFor="message">Message:</label>
+            <textarea id="message" placeholder="Your Message" rows="4" />
+          </div>
+          <button type="submit" className="submit-button">
+            Send Message
+          </button>
+        </form>
       </section>
     </div>
   );
