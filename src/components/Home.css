@@ -27,17 +27,8 @@
 }
 
 .home-link {
-  padding: 12px 24px;
+  margin-left: 10%;
   border-radius: 8px;
-  text-decoration: none;
-  font-weight: bold;
-  transition: background-color 0.3s ease, transform 0.2s ease;
-  background-color: #444;
-  color: #fff;
-}
-
-.home-link:hover {
-  background-color: #666;
 }
 
 .navbar {

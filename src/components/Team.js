@@ -1,3 +1,7 @@
+import { Link, NavLink } from "react-router-dom";
+import Logo from "./O-HabileOrgabizations&Co.jpg";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faFacebookF, faInstagram } from "@fortawesome/free-brands-svg-icons";
 import "./Team.css";
 
 const Team = () => {
@@ -24,21 +28,59 @@ const Team = () => {
     },
   ];
 
+  const socialIcons = [
+    { icon: faFacebookF, link: "#" },
+    { icon: faInstagram, link: "#" },
+  ];
+  const renderSocialLinks = () => (
+    <div className="social-links">
+      {socialIcons.map((social, index) => (
+        <a key={index} href={social.link} className="social-link">
+          <FontAwesomeIcon icon={social.icon} />
+        </a>
+      ))}
+    </div>
+  );
+
   return (
-    <div className="our-team">
-      <h1 className="section-heading">Our Team</h1>
-      <div className="team">
-        {teamMembers.map((member, index) => (
-          <div key={index} className="individual-team-member">
-            <h2 className="member-name">{member.name}</h2>
-            <h3 className="member-position" style={{ color: "black" }}>
-              {member.position}
-            </h3>
-            <p style={{ color: "black" }} className="member-bio">
-              {member.bio}
-            </p>
-          </div>
-        ))}
+    <div>
+      <div className="navbar">
+        <div className="logo">
+          <NavLink to="/" className="home-link">
+            <img src={Logo} alt="Company Logo" className="logo-image" />
+          </NavLink>
+        </div>
+        <div className="nav-links">
+          <NavLink to="/" className="nav-link">
+            Home
+          </NavLink>
+          <Link to="/services" className="nav-link">
+            Services
+          </Link>
+          <Link to="/team" className="nav-link">
+            Team
+          </Link>
+          <Link to="/contact" className="nav-link">
+            Contact Us
+          </Link>
+        </div>
+        {renderSocialLinks()}
+      </div>
+      <div className="our-team">
+        <h1 className="section-heading">Our Team</h1>
+        <div className="team">
+          {teamMembers.map((member, index) => (
+            <div key={index} className="individual-team-member">
+              <h2 className="member-name">{member.name}</h2>
+              <h3 className="member-position" style={{ color: "black" }}>
+                {member.position}
+              </h3>
+              <p style={{ color: "black" }} className="member-bio">
+                {member.bio}
+              </p>
+            </div>
+          ))}
+        </div>
       </div>
     </div>
   );

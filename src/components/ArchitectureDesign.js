@@ -2,12 +2,12 @@ import { Link, NavLink } from "react-router-dom";
 import "./ArchitectureDesign.css";
 import Logo from "./O-HabileOrgabizations&Co.jpg";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faFacebookF, faTwitter } from "@fortawesome/free-brands-svg-icons";
+import { faFacebookF, faInstagram } from "@fortawesome/free-brands-svg-icons";
 
 const ArchitectureDesign = () => {
   const socialIcons = [
     { icon: faFacebookF, link: "#" },
-    { icon: faTwitter, link: "#" },
+    { icon: faInstagram, link: "#" },
   ];
   const renderSocialLinks = () => (
     <div className="social-links">
@@ -22,7 +22,9 @@ const ArchitectureDesign = () => {
     <div>
       <div className="navbar">
         <div className="logo">
-          <img src={Logo} alt="Company Logo" className="logo-image" />
+          <NavLink to="/" className="home-link">
+            <img src={Logo} alt="Company Logo" className="logo-image" />
+          </NavLink>
         </div>
         <div className="nav-links">
           <NavLink to="/" className="nav-link">
