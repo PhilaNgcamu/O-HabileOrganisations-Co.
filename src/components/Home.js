@@ -129,7 +129,30 @@ const Home = () => {
       </section>
       <section className="team-section">
         <h2>Our Team</h2>
-        <p>Introduction to the team...</p>
+        <div className="team-members">
+          <div className="team-member">
+            <h3>CEO / Founder: Sibongumenzi Sithebe</h3>
+            <p>Managing Director: Philasande Ngcamu</p>
+          </div>
+        </div>
+        <div className="about-us">
+          <h2>About Us</h2>
+          <p>
+            At O-Habile Organisations & Co, we are more than just designers,
+            planners, and architects; we are storytellers, innovators, and
+            custodians of the future.
+          </p>
+          <p>
+            We are a dynamic and forward-thinking firm committed to pushing the
+            boundaries of creativity, innovation, and sustainability in the
+            realms of planning, design, and architecture.
+          </p>
+          <Button variant="primary" className="learn-more-button">
+            <NavLink to="/team" className="learn-more-button">
+              Learn More
+            </NavLink>
+          </Button>
+        </div>
       </section>
       <section className="additional-content">
         <h2>Contact</h2>
