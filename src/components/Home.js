@@ -58,8 +58,14 @@ const Home = () => {
   ];
 
   const socialIcons = [
-    { icon: faFacebookF, link: "#" },
-    { icon: faInstagram, link: "#" },
+    {
+      icon: faFacebookF,
+      link: "https://www.facebook.com/sibongumenzi.sithebe.98",
+    },
+    {
+      icon: faInstagram,
+      link: "https://www.instagram.com/sibongumenzisithebe_/",
+    },
   ];
 
   const renderSocialLinks = () => (
@@ -178,7 +184,7 @@ const Home = () => {
         </div>
       </section>
       <section className="additional-content">
-        <h2>Contact</h2>
+        <h2>Contact Us</h2>
         <form className="contact-form">
           <div className="form-group">
             <label htmlFor="name">Name:</label>

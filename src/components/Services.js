@@ -5,7 +5,7 @@ import Arch_Design from "./arch_design.jpg";
 import ConstructionPic from "./construction_pic.jpg";
 import Logo from "./O-HabileOrgabizations&Co.jpg";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faFacebook, faInstagram } from "@fortawesome/free-brands-svg-icons";
+import { faFacebookF, faInstagram } from "@fortawesome/free-brands-svg-icons";
 import "./Services.css";
 
 const Services = () => {
@@ -30,7 +30,10 @@ const Services = () => {
     },
   ];
   const socialIcons = [
-    { icon: faFacebook, link: "#" },
+    {
+      icon: faFacebookF,
+      link: "https://www.facebook.com/sibongumenzi.sithebe.98 ",
+    },
     { icon: faInstagram, link: "#" },
   ];
   const renderSocialLinks = () => (

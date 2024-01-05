@@ -19,7 +19,7 @@ const Team = () => {
     {
       name: "History",
       position: "Our Journey",
-      bio: "O-Habile Organisations & Co. was founded by Sibongumenzi Sithebe in 2023. ",
+      bio: "O-Habile Organisations & Co. was founded by Sibongumenzi Sithebe in 2023. O-Habile is clan name derived from the Sithebe family.",
     },
     {
       name: "About Us",
