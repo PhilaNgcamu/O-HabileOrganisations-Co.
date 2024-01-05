@@ -7,6 +7,7 @@ import ArchitectureDesign from "./components/ArchitectureDesign";
 import ArchitecturalPlanning from "./components/ArchitecturalPlanning";
 import Team from "./components/Team";
 import Contact from "./components/Contact";
+import Construction from "./components/Construction";
 
 const App = () => {
   return (
@@ -20,6 +21,7 @@ const App = () => {
             path="/architectural-planning"
             element={<ArchitecturalPlanning />}
           />
+          <Route path="/construction" element={<Construction />} />
           <Route path="/team" element={<Team />} />
           <Route path="/contact" element={<Contact />} />
         </Routes>

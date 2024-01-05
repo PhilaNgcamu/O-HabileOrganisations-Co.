@@ -1,28 +1,50 @@
 import React from "react";
-import { Link } from "react-router-dom";
-import "./Services.css"; // Import the CSS file for styling
+import { Link, NavLink } from "react-router-dom";
+import { Card, Button } from "react-bootstrap"; // Import Card and Button from react-bootstrap
+import "./Services.css";
 
 const Services = () => {
+  const services = [
+    {
+      title: "Architecture Design",
+      description: "Creating sustainable architectural designs.",
+      image: "url-to-your-image", // Replace with your image URL
+      link: "/architecture-design",
+    },
+    {
+      title: "Architectural Planning",
+      description: "Visionary planning for future landscapes.",
+      image: "url-to-your-image", // Replace with your image URL
+      link: "/architectural-planning",
+    },
+    {
+      title: "Construction",
+      description: "Expert construction services for projects.",
+      image: "url-to-your-image", // Replace with your image URL
+      link: "/construction",
+    },
+  ];
+
   return (
     <div className="services-container">
       <h1 className="section-heading">Our Services</h1>
       <p className="services-description">
-        Details about the services we offer, such as architectural planning,
-        design, and construction...
+        Explore our range of services, from architectural planning and design to
+        construction.
       </p>
-      <div className="services-links">
-        <Link to="/architecture-design" className="service-link">
-          Architecture Design
-        </Link>
-        <Link to="/architectural-planning" className="service-link">
-          Architectural Planning
-        </Link>
-        <Link to="/construction" className="service-link">
-          Construction
-        </Link>
-        <Link to="/contact" className="service-link">
-          Contact
-        </Link>
+      <div className="services-cards">
+        {services.map((service, index) => (
+          <Card key={index} className="service-card">
+            <Card.Img variant="top" src={service.image} alt={service.title} />
+            <Card.Body>
+              <Card.Title>{service.title}</Card.Title>
+              <Card.Text>{service.description}</Card.Text>
+              <NavLink to={service.link} className="btn-link service-link">
+                Learn More
+              </NavLink>
+            </Card.Body>
+          </Card>
+        ))}
       </div>
     </div>
   );
