@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from "react";
+import { useEffect, useRef } from "react";
 import { Card, Button } from "react-bootstrap";
 import { Link, NavLink } from "react-router-dom";
 import Logo from "./O-HabileOrgabizations&Co.jpg";
@@ -18,17 +18,24 @@ const Home = () => {
   const videoRef = useRef(null);
 
   useEffect(() => {
-    const handleScroll = () => {
-      const scrollOffset = window.pageYOffset;
-      if (videoRef.current) {
-        videoRef.current.style.transform = `translateY(-${
-          scrollOffset * 0.5
-        }px)`;
-      }
-    };
+    if (videoRef.current) {
+      videoRef.current.currentTime = 6;
 
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
+      const handleScroll = () => {
+        const scrollOffset = window.pageYOffset;
+        if (videoRef.current) {
+          videoRef.current.style.transform = `translateY(-${
+            scrollOffset * 0.5
+          }px)`;
+        }
+      };
+
+      window.addEventListener("scroll", handleScroll);
+
+      return () => {
+        window.removeEventListener("scroll", handleScroll);
+      };
+    }
   }, []);
 
   const services = [
@@ -118,17 +125,15 @@ const Home = () => {
             Team
           </Link>
           <Link to="/contact" className="nav-link">
-            Contact
+            Contact Us
           </Link>
         </div>
         {renderSocialLinks()}
       </div>
       <div className="main-content">
-        <video autoPlay loop muted className="video-background" ref={videoRef}>
+        <video autoPlay muted className="video-background" ref={videoRef}>
           <source
             src={video}
-            autoPlay
-            loop
             muted
             className="video-element"
             type="video/mp4"
