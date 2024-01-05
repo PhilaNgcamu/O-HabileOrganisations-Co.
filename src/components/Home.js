@@ -5,7 +5,6 @@ import Logo from "./O-HabileOrgabizations&Co.jpg";
 import PlanningArch from "./planning_arch.jpg";
 import Arch_Design from "./arch_design.jpg";
 import ConstructionPic from "./construction_pic.jpg";
-
 import video from "./video.mp4";
 import "./Home.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -55,6 +54,56 @@ const Home = () => {
     },
   ];
 
+  const socialIcons = [
+    { icon: faFacebookF, link: "#" },
+    { icon: faTwitter, link: "#" },
+    { icon: faInstagram, link: "#" },
+  ];
+
+  const renderSocialLinks = () => (
+    <div className="social-links">
+      {socialIcons.map((social, index) => (
+        <a key={index} href={social.link} className="social-link">
+          <FontAwesomeIcon icon={social.icon} />
+        </a>
+      ))}
+    </div>
+  );
+
+  const renderServices = () => (
+    <div className="card-container">
+      {services.map((service, index) => (
+        <div key={index} className="custom-card">
+          <Card>
+            <Card.Img
+              variant="top"
+              src={service.image}
+              alt={service.title}
+              style={{
+                height: "200px",
+                objectFit: "cover",
+                borderRadius: "2px",
+              }}
+            />
+            <Card.Body>
+              <Card.Title>{service.title}</Card.Title>
+              <Card.Text>{service.description}</Card.Text>
+              <Button variant="primary" className="custom-button">
+                <NavLink
+                  to={service.link}
+                  className="btn-link"
+                  style={{ color: "white", textDecoration: "none" }}
+                >
+                  Learn More
+                </NavLink>
+              </Button>
+            </Card.Body>
+          </Card>
+        </div>
+      ))}
+    </div>
+  );
+
   return (
     <div className="home-container">
       <div className="navbar">
@@ -72,17 +121,7 @@ const Home = () => {
             Contact
           </Link>
         </div>
-        <div className="social-links">
-          <a href="#" className="social-link">
-            <FontAwesomeIcon icon={faFacebookF} />
-          </a>
-          <a href="#" className="social-link">
-            <FontAwesomeIcon icon={faTwitter} />
-          </a>
-          <a href="#" className="social-link">
-            <FontAwesomeIcon icon={faInstagram} />
-          </a>
-        </div>
+        {renderSocialLinks()}
       </div>
       <div className="main-content">
         <video autoPlay loop muted className="video-background" ref={videoRef}>
@@ -104,33 +143,7 @@ const Home = () => {
       </div>
       <section className="services-section">
         <h2>Our Services</h2>
-        <div className="card-container">
-          {services.map((service, index) => (
-            <div key={index} className="custom-card">
-              <Card>
-                <Card.Img
-                  variant="top"
-                  src={service.image}
-                  alt={service.title}
-                  style={{ height: "200px", objectFit: "cover" }}
-                />
-                <Card.Body>
-                  <Card.Title>{service.title}</Card.Title>
-                  <Card.Text>{service.description}</Card.Text>
-                  <Button variant="primary" className="custom-button">
-                    <NavLink
-                      to={service.link}
-                      className="btn-link"
-                      style={{ color: "white", textDecoration: "none" }}
-                    >
-                      Learn More
-                    </NavLink>
-                  </Button>
-                </Card.Body>
-              </Card>
-            </div>
-          ))}
-        </div>
+        {renderServices()}
       </section>
       <section className="team-section">
         <h2>Our Team</h2>

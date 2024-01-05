@@ -1,6 +1,5 @@
-import React from "react";
 import { Link } from "react-router-dom";
-import "./ArchitectureDesign.css"; // Import the CSS file for styling
+import "./ArchitectureDesign.css";
 
 const ArchitectureDesign = () => {
   return (

@@ -24,7 +24,7 @@
   border-radius: 8px;
   padding: 20px;
   transition: border-color 0.3s ease;
-  text-align: left; /* Align text to the left */
+  text-align: left;
 }
 
 .member-name {

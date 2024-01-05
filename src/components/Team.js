@@ -1,4 +1,3 @@
-import React from "react";
 import "./Team.css";
 
 const Team = () => {
@@ -16,7 +15,7 @@ const Team = () => {
     {
       name: "History",
       position: "Our Journey",
-      bio: "O-Habile Organisations & Co. has a rich history dating back to its inception in 20XX. From humble beginnings, we've evolved and grown, overcoming challenges and achieving milestones. Our journey reflects our commitment to excellence and innovation in the realm of architecture and design.",
+      bio: "O-Habile Organisations & Co. was founded by Sibongumenzi Sithebe in 2023. ",
     },
     {
       name: "About Us",
