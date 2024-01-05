@@ -8,11 +8,7 @@ import ConstructionPic from "./construction_pic.jpg";
 import video from "./video.mp4";
 import "./Home.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faFacebookF,
-  faTwitter,
-  faInstagram,
-} from "@fortawesome/free-brands-svg-icons";
+import { faFacebookF, faTwitter } from "@fortawesome/free-brands-svg-icons";
 
 const Home = () => {
   const videoRef = useRef(null);
@@ -64,7 +60,6 @@ const Home = () => {
   const socialIcons = [
     { icon: faFacebookF, link: "#" },
     { icon: faTwitter, link: "#" },
-    { icon: faInstagram, link: "#" },
   ];
 
   const renderSocialLinks = () => (
@@ -118,6 +113,9 @@ const Home = () => {
           <img src={Logo} alt="Company Logo" className="logo-image" />
         </div>
         <div className="nav-links">
+          <NavLink to="/" className="nav-link">
+            Home
+          </NavLink>
           <Link to="/services" className="nav-link">
             Services
           </Link>
