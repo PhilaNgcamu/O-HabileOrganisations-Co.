@@ -1,0 +1,53 @@
+.interior-design-container {
+  margin-top: 150px;
+  width: 90%;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  color: #333;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.section-heading {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.section-description {
+  font-size: 1.1rem;
+  margin-bottom: 30px;
+}
+
+.back-link,
+.contact-link {
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  margin: 0 10px;
+}
+
+.back-link {
+  background-color: #ddd;
+  color: #333;
+}
+
+.back-link:hover {
+  background-color: #ccc;
+}
+
+.contact-link {
+  background-color: #000;
+  color: #fff;
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+}
+
+.contact-link:hover {
+  background-color: #333;
+}

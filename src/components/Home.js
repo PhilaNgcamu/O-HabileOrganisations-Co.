@@ -4,6 +4,7 @@ import { Link, NavLink } from "react-router-dom";
 import Logo from "./O-HabileOrgabizations&Co.jpg";
 import PlanningArch from "./planning_arch.jpg";
 import Arch_Design from "./arch_design.jpg";
+import InteriorDesignPic from "./interior-design.jpg";
 import ConstructionPic from "./construction_pic.jpg";
 import video from "./video.mp4";
 import "./Home.css";
@@ -54,6 +55,12 @@ const Home = () => {
       description: "Expert construction services for architectural projects.",
       link: "/construction",
       image: ConstructionPic,
+    },
+    {
+      title: "Interior Design and Planning",
+      description: "Expert for interior design and planning",
+      link: "/interior-design",
+      image: InteriorDesignPic,
     },
   ];
 
@@ -212,7 +219,7 @@ const Home = () => {
       </section>
       <section className="additional-content fade-in">
         <h2>Contact Us</h2>
-        <form className="contact-form">
+        <form className="contact-form fade-in">
           <div className="form-group">
             <label htmlFor="name">Name:</label>
             <input type="text" id="name" placeholder="Your Name" />
