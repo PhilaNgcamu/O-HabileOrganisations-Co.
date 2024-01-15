@@ -79,9 +79,9 @@ const Home = () => {
   );
 
   const renderServices = () => (
-    <div className="card-container">
+    <div className="card-container fade-in">
       {services.map((service, index) => (
-        <div key={index} className="custom-card">
+        <div key={index} className="custom-card fade-in">
           <Card>
             <Card.Img
               variant="top"
@@ -111,6 +111,33 @@ const Home = () => {
       ))}
     </div>
   );
+
+  useEffect(() => {
+    const handleIntersection = (entries, observer) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("visible");
+          observer.unobserve(entry.target);
+        }
+      });
+    };
+
+    const options = {
+      root: null,
+      rootMargin: "0px",
+      threshold: 0.2,
+    };
+
+    const observer = new IntersectionObserver(handleIntersection, options);
+
+    document.querySelectorAll(".fade-in").forEach((element) => {
+      observer.observe(element);
+    });
+
+    return () => {
+      observer.disconnect();
+    };
+  }, []);
 
   return (
     <div className="home-container">
@@ -146,25 +173,25 @@ const Home = () => {
           />
           Your browser does not support the video tag.
         </video>
-        <h1 className="main-heading">O-Habile Organisations & Co.</h1>
-        <p className="sub-heading">
+        <h1 className="main-heading fade-in">O-Habile Organisations & Co.</h1>
+        <p className="sub-heading fade-in">
           Empowering tomorrow's landscapes through visionary design, sustainable
           architecture, and meticulous planning...
         </p>
       </div>
-      <section className="services-section">
+      <section className="services-section fade-in">
         <h2>Our Services</h2>
         {renderServices()}
       </section>
-      <section className="team-section">
+      <section className="team-section fade-in">
         <h2>Our Team</h2>
-        <div className="team-members">
+        <div className="team-members fade-in">
           <div className="team-member">
             <h3>CEO / Founder: Sibongumenzi Sithebe</h3>
             <p>Managing Director: Philasande Ngcamu</p>
           </div>
         </div>
-        <div className="about-us">
+        <div className="about-us fade-in">
           <h2>About Us</h2>
           <p>
             At O-Habile Organisations & Co, we are more than just designers,
@@ -183,7 +210,7 @@ const Home = () => {
           </Button>
         </div>
       </section>
-      <section className="additional-content">
+      <section className="additional-content fade-in">
         <h2>Contact Us</h2>
         <form className="contact-form">
           <div className="form-group">
