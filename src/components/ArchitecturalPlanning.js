@@ -1,7 +1,7 @@
 import React from "react";
 import { Link, NavLink } from "react-router-dom";
 import "./ArchitecturalPlanning.css";
-import Logo from "./O-HabileOrgabizations&Co.jpg";
+import Logo from "./logo.jpg";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faFacebookF, faInstagram } from "@fortawesome/free-brands-svg-icons";
 

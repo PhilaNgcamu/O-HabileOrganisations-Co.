@@ -121,12 +121,10 @@ const Home = () => {
 
   useEffect(() => {
     const handleIntersection = (entries, observer) => {
-      entries.forEach((entry, index) => {
+      entries.forEach((entry) => {
         if (entry.isIntersecting) {
-          setTimeout(() => {
-            entry.target.classList.add("visible");
-            observer.unobserve(entry.target);
-          }, index * 200);
+          entry.target.classList.add("visible");
+          observer.unobserve(entry.target);
         }
       });
     };
@@ -134,7 +132,7 @@ const Home = () => {
     const options = {
       root: null,
       rootMargin: "0px",
-      threshold: 0.2,
+      threshold: 0.1,
     };
 
     const observer = new IntersectionObserver(handleIntersection, options);
