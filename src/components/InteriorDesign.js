@@ -1,3 +1,4 @@
+import React from "react";
 import { Link, NavLink } from "react-router-dom";
 import Logo from "./O-HabileOrgabizations&Co.jpg";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -9,6 +10,7 @@ const InteriorDesign = () => {
     { icon: faFacebookF, link: "#" },
     { icon: faInstagram, link: "#" },
   ];
+
   const renderSocialLinks = () => (
     <div className="social-links">
       {socialIcons.map((social, index) => (
@@ -18,6 +20,7 @@ const InteriorDesign = () => {
       ))}
     </div>
   );
+
   return (
     <div>
       <div className="navbar">
@@ -45,9 +48,20 @@ const InteriorDesign = () => {
       <div className="interior-design-container">
         <h1 className="section-heading">Interior Design</h1>
         <p className="section-description">
-          Details about our expert InteriorDesign services for interior
-          design...
+          Transform your spaces with our expert Interior Design services. Our
+          team of skilled designers combines creativity and functionality to
+          create stunning interiors tailored to your unique preferences.
         </p>
+        <div className="details-section">
+          <h2>Our Approach</h2>
+          <p>
+            We believe in a collaborative approach to interior design. Our team
+            works closely with clients to understand their vision, lifestyle,
+            and requirements, ensuring that every design reflects their
+            personality and meets practical needs.
+          </p>
+        </div>
+        <div className="details-section"></div>
         <div className="navigation-links">
           <Link to="/services" className="back-link">
             Back to Services

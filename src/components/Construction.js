@@ -1,3 +1,4 @@
+import React from "react";
 import { Link, NavLink } from "react-router-dom";
 import Logo from "./O-HabileOrgabizations&Co.jpg";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -9,6 +10,7 @@ const Construction = () => {
     { icon: faFacebookF, link: "#" },
     { icon: faInstagram, link: "#" },
   ];
+
   const renderSocialLinks = () => (
     <div className="social-links">
       {socialIcons.map((social, index) => (
@@ -18,6 +20,7 @@ const Construction = () => {
       ))}
     </div>
   );
+
   return (
     <div>
       <div className="navbar">
@@ -45,9 +48,19 @@ const Construction = () => {
       <div className="construction-container">
         <h1 className="section-heading">Construction</h1>
         <p className="section-description">
-          Details about our expert construction services for architectural
-          projects...
+          Elevate your architectural projects with our expert construction
+          services. We specialize in delivering high-quality and innovative
+          construction solutions tailored to your unique needs.
         </p>
+
+        <div className="details-section">
+          <h2>Our Approach</h2>
+          <p>
+            We approach each construction project with a commitment to quality,
+            attention to detail, and adherence to timelines. Our experienced
+            team ensures seamless project execution from concept to completion.
+          </p>
+        </div>
         <div className="navigation-links">
           <Link to="/services" className="back-link">
             Back to Services

@@ -4,6 +4,7 @@ import PlanningArch from "./planning_arch.jpg";
 import Arch_Design from "./arch_design.jpg";
 import ConstructionPic from "./construction_pic.jpg";
 import Logo from "./O-HabileOrgabizations&Co.jpg";
+import InteriorDesignPic from "./interior-design.jpg";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faFacebookF, faInstagram } from "@fortawesome/free-brands-svg-icons";
 import "./Services.css";
@@ -27,6 +28,12 @@ const Services = () => {
       description: "Expert construction services for projects.",
       image: ConstructionPic,
       link: "/construction",
+    },
+    {
+      title: "Interior Design and Planning",
+      description: "Expert for interior design and planning",
+      image: InteriorDesignPic,
+      link: "/interior-design",
     },
   ];
   const socialIcons = [

@@ -1,3 +1,4 @@
+import React from "react";
 import { Link, NavLink } from "react-router-dom";
 import "./ArchitectureDesign.css";
 import Logo from "./O-HabileOrgabizations&Co.jpg";
@@ -9,6 +10,7 @@ const ArchitectureDesign = () => {
     { icon: faFacebookF, link: "#" },
     { icon: faInstagram, link: "#" },
   ];
+
   const renderSocialLinks = () => (
     <div className="social-links">
       {socialIcons.map((social, index) => (
@@ -18,6 +20,7 @@ const ArchitectureDesign = () => {
       ))}
     </div>
   );
+
   return (
     <div>
       <div className="navbar">
@@ -45,9 +48,18 @@ const ArchitectureDesign = () => {
       <div className="architecture-design-container">
         <h1 className="section-heading">Architecture Design</h1>
         <p className="section-description">
-          An in-depth exploration of our innovative 3D architecture design
-          process...
+          Explore the art and science of architectural design with our
+          innovative 3D design process. We bring your visions to life through
+          meticulous planning, creativity, and cutting-edge technology.
         </p>
+        <div className="details-section">
+          <h2>Design Process</h2>
+          <p>
+            Our design process involves collaboration, innovation, and a keen
+            understanding of your unique requirements. From concept to
+            execution, we ensure a seamless and inspiring design journey.
+          </p>
+        </div>
         <div className="navigation-links">
           <Link to="/services" className="back-link">
             Back to Services

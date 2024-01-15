@@ -1,3 +1,4 @@
+import React from "react";
 import { Link, NavLink } from "react-router-dom";
 import "./ArchitecturalPlanning.css";
 import Logo from "./O-HabileOrgabizations&Co.jpg";
@@ -9,6 +10,7 @@ const ArchitecturalPlanning = () => {
     { icon: faFacebookF, link: "#" },
     { icon: faInstagram, link: "#" },
   ];
+
   const renderSocialLinks = () => (
     <div className="social-links">
       {socialIcons.map((social, index) => (
@@ -18,6 +20,7 @@ const ArchitecturalPlanning = () => {
       ))}
     </div>
   );
+
   return (
     <div>
       <div className="navbar">
@@ -45,13 +48,24 @@ const ArchitecturalPlanning = () => {
       <div className="architectural-planning-container">
         <h1 className="section-heading">Architectural Planning</h1>
         <p className="section-description">
-          Comprehensive overview of our architectural planning methodology...
+          At O-Habile Organisations & Co, we approach architectural planning
+          with precision and creativity. Our comprehensive planning methodology
+          ensures the successful execution of visionary architecture for
+          tomorrow's landscapes.
         </p>
+        <div className="details-section">
+          <h2>Our Approach</h2>
+          <p>
+            We believe in collaborative planning that involves close
+            communication with our clients. Our approach integrates innovative
+            design concepts with practical solutions to meet your unique
+            requirements.
+          </p>
+        </div>
         <div className="navigation-links">
           <Link to="/services" className="back-link">
             Back to Services
           </Link>
-
           <Link to="/contact" className="contact-link">
             Contact
           </Link>

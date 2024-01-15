@@ -1,9 +1,9 @@
 import { useEffect, useRef } from "react";
 import { Card, Button } from "react-bootstrap";
 import { Link, NavLink } from "react-router-dom";
-import Logo from "./O-HabileOrgabizations&Co.jpg";
+import Logo from "./logo.jpg";
 import PlanningArch from "./planning_arch.jpg";
-import Arch_Design from "./arch_design.jpg";
+import Arch_Design from "./white-house.jpg";
 import InteriorDesignPic from "./interior-design.jpg";
 import ConstructionPic from "./construction_pic.jpg";
 import video from "./video.mp4";
@@ -121,10 +121,12 @@ const Home = () => {
 
   useEffect(() => {
     const handleIntersection = (entries, observer) => {
-      entries.forEach((entry) => {
+      entries.forEach((entry, index) => {
         if (entry.isIntersecting) {
-          entry.target.classList.add("visible");
-          observer.unobserve(entry.target);
+          setTimeout(() => {
+            entry.target.classList.add("visible");
+            observer.unobserve(entry.target);
+          }, index * 200);
         }
       });
     };
@@ -180,7 +182,7 @@ const Home = () => {
           />
           Your browser does not support the video tag.
         </video>
-        <h1 className="main-heading fade-in">O-Habile Organisations & Co.</h1>
+        <h1 className="main-heading fade-in">O-Habile Enterprises & Co.</h1>
         <p className="sub-heading fade-in">
           Empowering tomorrow's landscapes through visionary design, sustainable
           architecture, and meticulous planning...
