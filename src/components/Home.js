@@ -37,7 +37,7 @@ const Home = () => {
 
   const services = [
     {
-      title: "Architectural Planning",
+      title: "Architectural Floor Planning",
       description:
         "Designing visionary architecture for tomorrow's landscapes.",
       link: "/architectural-planning",

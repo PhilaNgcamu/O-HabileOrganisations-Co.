@@ -18,7 +18,7 @@ const Services = () => {
       link: "/architecture-design",
     },
     {
-      title: "Architectural Planning",
+      title: "Architectural Floor Planning",
       description: "Visionary planning for future landscapes.",
       image: PlanningArch,
       link: "/architectural-planning",
