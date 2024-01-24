@@ -45,7 +45,8 @@ const ArchitecturalPlanning = () => {
         </div>
         {renderSocialLinks()}
       </div>
-      <div className="architectural-planning-container">
+      <div className="architectural-planning-container"></div>
+      <div className="section-architectural">
         <h1 className="section-heading">Architectural Planning</h1>
         <p className="section-description">
           At O-Habile Organisations & Co, we approach architectural planning
@@ -65,9 +66,6 @@ const ArchitecturalPlanning = () => {
         <div className="navigation-links">
           <Link to="/services" className="back-link">
             Back to Services
-          </Link>
-          <Link to="/contact" className="contact-link">
-            Contact
           </Link>
         </div>
       </div>

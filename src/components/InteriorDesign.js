@@ -66,9 +66,6 @@ const InteriorDesign = () => {
           <Link to="/services" className="back-link">
             Back to Services
           </Link>
-          <Link to="/contact" className="contact-link">
-            Contact
-          </Link>
         </div>
       </div>
     </div>
