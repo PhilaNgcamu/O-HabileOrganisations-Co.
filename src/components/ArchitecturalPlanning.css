@@ -1,5 +1,4 @@
 .architectural-planning-container {
-  margin: 100px 0 0 0;
   padding: 230px;
   background: url("./arch_design.jpg") center/cover;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
@@ -7,7 +6,8 @@
   margin-left: auto;
   margin-right: auto;
   text-align: center;
-  position: relative; /* Add this to make the positioning relative */
+  position: relative;
+  font-size: large;
 }
 
 .section-architectural {
@@ -24,6 +24,7 @@
   font-size: 2.5rem;
   margin-bottom: 20px;
   color: #000; /* Change the color as per your design */
+  text-shadow: 4px #000;
 }
 
 .section-description {
@@ -49,4 +50,61 @@
 
 .navigation-links {
   margin-top: 20px;
+}
+
+.section-description {
+  font-size: 1.2rem;
+  color: #666; /* Update the text color as per your design */
+}
+
+/* Expertise Section Styles */
+.expertise-section {
+  margin: 30px 0;
+}
+
+.expertise-section h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #000; /* Update the text color as per your design */
+}
+
+.expertise-section p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  color: #666; /* Update the text color as per your design */
+}
+
+/* Design Process Section Styles */
+.design-process-section {
+  margin: 30px 0;
+}
+
+.design-process-section h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #000; /* Update the text color as per your design */
+}
+
+.design-process-section p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  color: #666; /* Update the text color as per your design */
+}
+
+/* Why Choose Section Styles */
+.why-choose-section {
+  margin: 30px 0;
+}
+
+.why-choose-section h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #000; /* Update the text color as per your design */
+  text-shadow: 4px #fff;
+}
+
+.why-choose-section p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  color: #666; /* Update the text color as per your design */
 }
