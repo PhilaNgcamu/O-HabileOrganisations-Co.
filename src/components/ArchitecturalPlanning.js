@@ -45,23 +45,29 @@ const ArchitecturalPlanning = () => {
         </div>
         {renderSocialLinks()}
       </div>
-      <div className="architectural-planning-container"></div>
-      <div className="section-architectural">
-        <h1 className="section-heading">Architectural Planning</h1>
-        <p className="section-description">
-          At O-Habile Organisations & Co, we approach architectural planning
-          with precision and creativity. Our comprehensive planning methodology
-          ensures the successful execution of visionary architecture for
-          tomorrow's landscapes.
-        </p>
-        <div className="details-section">
-          <h2>Our Approach</h2>
-          <p>
-            We believe in collaborative planning that involves close
-            communication with our clients. Our approach integrates innovative
-            design concepts with practical solutions to meet your unique
-            requirements.
+      <div className="architectural-planning-container">
+        <div className="section-architectural">
+          <h1 className="section-heading">Architectural Floor Planning</h1>
+          <p className="section-description">
+            Welcome to O-Habile Enterprises & Co, where innovation meets
+            excellence in architectural floor planning. At O-Habile, we
+            specialize in delivering cutting-edge solutions that redefine spaces
+            and elevate your living and working environments. Our commitment to
+            quality, creativity, and functionality sets us apart in the world of
+            architectural design.
           </p>
+        </div>
+        <div className="expertise-section">
+          <h2>Our Expertise</h2>
+          {/* Add your expertise details here */}
+        </div>
+        <div className="design-process-section">
+          <h2>Our Design Process</h2>
+          {/* Add your design process details here */}
+        </div>
+        <div className="why-choose-section">
+          <h2>Why Choose O-Habile?</h2>
+          {/* Add your reasons to choose O-Habile */}
         </div>
         <div className="navigation-links">
           <Link to="/services" className="back-link">
