@@ -1,8 +1,7 @@
 .architectural-planning-container {
   padding: 100px;
-  background: url("./arch_design.jpg") center/cover;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-  color: #fff;
+  color: #000;
   margin-left: auto;
   margin-right: auto;
   text-align: center;
@@ -13,23 +12,26 @@
 .section-architectural {
   padding: 50px;
   background-color: #fff;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  background: url("./arch_design.jpg") center/cover;
   border-radius: 10px;
   margin: 20px auto;
   text-align: center;
-  color: #333;
+  color: #fff;
+  text-shadow: 0 0 2px rgb(0, 0, 1);
 }
 
 .section-heading {
   font-size: 2.5rem;
   margin-bottom: 20px;
-
+  color: #fff;
   text-shadow: 4px #000;
 }
 
 .section-description {
   font-size: 1.1rem;
   margin-bottom: 30px;
+  color: #fff;
+  text-shadow: 0 0 2px rgb(0, 0, 1);
 }
 
 .details-section {
@@ -39,13 +41,13 @@
 .details-section h2 {
   font-size: 2rem;
   margin-bottom: 15px;
-  color: #666; /* Change the color as per your design */
+  color: #000; /* Change the color as per your design */
 }
 
 .details-section p {
   font-size: 1.2rem;
   line-height: 1.6;
-  color: #666; /* Change the color as per your design */
+  color: #000; /* Change the color as per your design */
 }
 
 .navigation-links {
@@ -54,7 +56,7 @@
 
 .section-description {
   font-size: 1.2rem;
-  color: #666;
+  color: #fff;
 }
 
 .expertise-section {
@@ -64,15 +66,13 @@
 .expertise-section h2 {
   font-size: 2rem;
   margin-bottom: 20px;
-  color: #fff;
-  text-shadow: 0 0 10px rgb(0, 0, 1);
+  color: #000;
 }
 
 .expertise-section p {
   font-size: 1.2rem;
   line-height: 1.6;
-  color: #666;
-  text-shadow: 0 0 10px rgb(0, 0, 1);
+  color: #000;
 }
 
 .design-process-section {
@@ -82,14 +82,13 @@
 .design-process-section h2 {
   font-size: 2rem;
   margin-bottom: 20px;
-  color: #fff;
-  text-shadow: 0 0 10px rgb(0, 0, 1);
+  color: #000;
 }
 
 .design-process-section p {
   font-size: 1.2rem;
   line-height: 1.6;
-  color: #666;
+  color: #000;
   text-shadow: 0 0 10px rgb(0, 0, 1);
 }
 
@@ -100,13 +99,11 @@
 .why-choose-section h2 {
   font-size: 2rem;
   margin-bottom: 20px;
-  color: #fff;
-  text-shadow: 0 0 10px rgb(0, 0, 1);
+  color: #000;
 }
 
 .why-choose-section p {
   font-size: 1.2rem;
   line-height: 1.6;
-  color: #666;
-  text-shadow: 0 0 10px rgb(0, 0, 1);
+  color: #000;
 }
