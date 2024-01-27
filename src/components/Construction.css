@@ -1,5 +1,5 @@
 .construction-container {
-  margin-top: 150px;
+  margin-top: 110px;
   width: 90%;
   padding: 20px;
   background-color: #fff;
@@ -24,11 +24,16 @@
 .section-heading-construction {
   font-size: 2.5rem;
   margin-bottom: 20px;
+  color: #fff;
+  text-shadow: 0 0 10px rgb(0, 0, 1);
 }
 
 .section-description-construction {
   font-size: 1.1rem;
   margin-bottom: 30px;
+  color: #000;
+  background-color: #fff;
+  border-radius: 5px;
 }
 
 .back-link {
