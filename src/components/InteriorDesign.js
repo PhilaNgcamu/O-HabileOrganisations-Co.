@@ -46,12 +46,14 @@ const InteriorDesign = () => {
         {renderSocialLinks()}
       </div>
       <div className="interior-design-container">
-        <h1 className="section-heading">Interior Design</h1>
-        <p className="section-description">
-          Transform your spaces with our expert Interior Design services. Our
-          team of skilled designers combines creativity and functionality to
-          create stunning interiors tailored to your unique preferences.
-        </p>
+        <div className="interior-design">
+          <h1 className="section-heading-interior">Interior Design</h1>
+          <p className="section-description-interior">
+            Transform your spaces with our expert Interior Design services. Our
+            team of skilled designers combines creativity and functionality to
+            create stunning interiors tailored to your unique preferences.
+          </p>
+        </div>
         <div className="details-section">
           <h2>Our Approach</h2>
           <p>

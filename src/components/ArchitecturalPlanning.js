@@ -46,6 +46,7 @@ const ArchitecturalPlanning = () => {
         {renderSocialLinks()}
       </div>
       <div className="architectural-planning-container">
+        <div className="background-img-arch"></div>
         <div className="section-architectural">
           <h1 className="section-heading">Architectural Floor Planning</h1>
           <p className="section-description">

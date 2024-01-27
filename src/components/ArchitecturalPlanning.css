@@ -11,20 +11,19 @@
 
 .section-architectural {
   padding: 50px;
-  background-color: #fff;
-  background: url("./arch_design.jpg") center/cover;
+  background: url("./architectural-planning.jpg") center/cover;
   border-radius: 10px;
   margin: 20px auto;
   text-align: center;
-  color: #fff;
-  text-shadow: 0 0 2px rgb(0, 0, 1);
+  color: #000;
+  text-shadow: 0 0 100px rgb(0, 0, 1);
 }
 
 .section-heading {
   font-size: 2.5rem;
   margin-bottom: 20px;
-  color: #fff;
-  text-shadow: 4px #000;
+  color: #000;
+  text-shadow: 0 0 100px rgb(231, 231, 248);
 }
 
 .section-description {
@@ -56,7 +55,7 @@
 
 .section-description {
   font-size: 1.2rem;
-  color: #fff;
+  color: #000;
 }
 
 .expertise-section {

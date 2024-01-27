@@ -46,12 +46,15 @@ const ArchitectureDesign = () => {
         {renderSocialLinks()}
       </div>
       <div className="architecture-design-container">
-        <h1 className="section-heading">Architecture Design</h1>
-        <p className="section-description">
-          Explore the art and science of architectural design with our
-          innovative 3D design process. We bring your visions to life through
-          meticulous planning, creativity, and cutting-edge technology.
-        </p>
+        <div className="architecture-design">
+          <h1 className="section-heading-and subtext">Architecture Design</h1>
+          <p className="section-description-design">
+            Explore the art and science of architectural design with our
+            innovative 3D design process. We bring your visions to life through
+            meticulous planning, creativity, and cutting-edge technology.
+          </p>
+        </div>
+
         <div className="details-section">
           <h2>Design Process</h2>
           <p>

@@ -43,13 +43,14 @@ const Construction = () => {
         {renderSocialLinks()}
       </div>
       <div className="construction-container">
-        <h1 className="section-heading">Construction</h1>
-        <p className="section-description">
-          Elevate your architectural projects with our expert construction
-          services. We specialize in delivering high-quality and innovative
-          construction solutions tailored to your unique needs.
-        </p>
-
+        <div className="construction">
+          <h1 className="section-heading-construction">Construction</h1>
+          <p className="section-description-construction">
+            Elevate your architectural projects with our expert construction
+            services. We specialize in delivering high-quality and innovative
+            construction solutions tailored to your unique needs.
+          </p>
+        </div>
         <div className="details-section">
           <h2>Our Approach</h2>
           <p>
@@ -61,9 +62,6 @@ const Construction = () => {
         <div className="navigation-links">
           <Link to="/services" className="back-link">
             Back to Services
-          </Link>
-          <Link to="/contact" className="contact-link">
-            Contact
           </Link>
         </div>
       </div>
