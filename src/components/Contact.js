@@ -18,6 +18,7 @@ const Contact = () => {
       ))}
     </div>
   );
+
   return (
     <div>
       <div className="navbar">
